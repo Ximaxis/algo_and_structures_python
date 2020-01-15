@@ -4,3 +4,21 @@
 записывать ее в последнюю ячейку строки.
 В конце следует вывести полученную матрицу.
 """
+
+M = 5
+N = 4
+A = []
+for i in range(N):
+    b = []
+    s = 0
+    print(f"{i + 1}-я строка:")
+    for j in range(M - 1):
+        n = int(input())
+        s += n
+        b.append(n)
+    b.append(s)
+    A.append(b)
+
+print("Итоговая матрица имеет вид")
+for i in A:
+    print(i)
