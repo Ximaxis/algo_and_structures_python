@@ -22,5 +22,5 @@ for j in range(M):
         if A[i][j] < mn:
             mn = A[i][j]
     if mn > MX:
-        mx = mn
+        MX = mn
 print(f"Максимальный элемент среди минимальных элементов столбцов матрицы: {MX}")
