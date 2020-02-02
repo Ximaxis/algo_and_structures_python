@@ -18,11 +18,11 @@ def search_median(list):
         for k in range(len(list)):
             if list[i] > list[k]:
                 left.append(list[k])
-            if list[i] < list[k]:
+            elif list[i] < list[k]:
                 right.append(list[k])
-            if list[i] == list[k] and i > k:
+            elif list[i] == list[k] and i > k:
                 left.append(list[k])
-            if list[i] == list[k] and i < k:
+            elif list[i] == list[k] and i < k:
                 right.append(list[k])
 
         if len(left) == len(right):
